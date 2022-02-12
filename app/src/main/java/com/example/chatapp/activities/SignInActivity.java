@@ -1,13 +1,11 @@
 package com.example.chatapp.activities;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.example.chatapp.R;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.chatapp.databinding.ActivitySignInBinding;
-import com.example.chatapp.databinding.ActivitySignUpBinding;
 
 public class SignInActivity extends AppCompatActivity {
 
@@ -24,5 +22,23 @@ public class SignInActivity extends AppCompatActivity {
     private void setListeners(){
         binding.textCreateNewAccount.setOnClickListener(v ->
                 startActivity(new Intent(getApplicationContext(),SignUpActivity.class)));
+    //    binding.buttonSignIn.setOnClickListener(v ->addDataToFirestore());
     }
+    //Adding dummy data to wheather data is added to firebase
+
+  /* private void addDataToFirestore(){
+        FirebaseFirestore database = FirebaseFirestore.getInstance();
+        HashMap<String,Object> data = new HashMap<>();
+        data.put("FIRST_NAME", "Nanda");
+        data.put("LAST_NAME","GOPAL");
+        database.collection("users")
+                .add(data)
+                .addOnSuccessListener(documentReference -> {
+                    Toast.makeText(getApplicationContext(),"Data Inserted",Toast.LENGTH_SHORT).show();
+                })
+                .addOnFailureListener(exception ->{
+                    Toast.makeText(getApplicationContext(), exception.getMessage(), Toast.LENGTH_SHORT).show();
+                });
+    }*/
+
 }

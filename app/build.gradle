@@ -13,7 +13,7 @@ android {
         targetSdk 32
         versionCode 1
         versionName "1.0"
-
+        multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -39,10 +39,6 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.4.1'
     implementation 'com.google.android.material:material:1.5.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
-
-    //Firebase dependency added
-    implementation 'com.google.firebase:firebase-messaging:20.1.0'
-
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
@@ -58,4 +54,12 @@ dependencies {
     //ROUNDED IMAGEVIEW
     implementation 'com.makeramen:roundedimageview:2.3.0'
 
+    //Firebase
+    //Firebase dependency added
+    implementation 'com.google.firebase:firebase-messaging:20.1.0'
+    //Firebase database dependency added
+    implementation 'com.google.firebase:firebase-firestore:24.0.1'
+
+    // MultiDex
+    implementation 'androidx.multidex:multidex:2.0.1'
 }
