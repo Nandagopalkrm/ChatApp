@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ChatApp</string>
+    <string name="welcome_back">Welcome Back!!</string>
+    <string name="login_to_continue">Login to Continue</string>
+    <string name="email">EMAIL</string>
+    <string name="password">PASSWORD</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="create_new_account">CREATE NEW ACCOUNT</string>
+    <string name="add_image">Add Image</string>
+    <string name="name">NAME</string>
+    <string name="confirm_password">CONFIRM PASSWORD</string>
+    <string name="sign_up">SIGN UP</string>
+</resources>

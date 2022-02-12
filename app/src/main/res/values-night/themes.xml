@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    //SETTING UP THE THEME FOR THE PROJECT
+    // WE ARE GOING TO USE SAME THEME FOR BOTH NORMAL AND DARK MODE
+
+    <style name="Theme.ChatApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/primary</item>
+    </style>
+</resources>
