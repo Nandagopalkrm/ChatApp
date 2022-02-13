@@ -6,6 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".activities.MainActivity">
 
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/hello_to_chatapp_page"
+    android:textAlignment="center"
+    android:textSize="@dimen/_30ssp"
+    android:textStyle="bold"></TextView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
