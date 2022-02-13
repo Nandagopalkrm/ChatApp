@@ -56,7 +56,8 @@ dependencies {
 
     //Firebase
     //Firebase dependency added
-    implementation 'com.google.firebase:firebase-messaging:20.1.0'
+    implementation 'com.google.firebase:firebase-core:20.1.0'
+    implementation 'com.google.firebase:firebase-messaging:23.0.0'
     //Firebase database dependency added
     implementation 'com.google.firebase:firebase-firestore:24.0.1'
 
