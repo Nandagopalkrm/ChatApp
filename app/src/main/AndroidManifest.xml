@@ -13,10 +13,8 @@
         android:theme="@style/Theme.ChatApp">
         <activity
             android:name=".activities.ChatActivity"
-            android:exported="false" />
-        <activity
-            android:name=".activities.UserActivity"
-            android:exported="false" />
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".activities.UserActivity" />
         <activity
             android:name=".activities.SignUpActivity"
             android:windowSoftInputMode="adjustResize" />
