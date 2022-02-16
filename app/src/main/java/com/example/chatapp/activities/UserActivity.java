@@ -60,6 +60,7 @@ public class UserActivity extends AppCompatActivity implements UserListener {
                             user.email = queryDocumentSnapshots.getString(Constants.KEY_EMAIL);
                             user.image = queryDocumentSnapshots.getString(Constants.KEY_IMAGE);
                             user.token = queryDocumentSnapshots.getString(Constants.KEY_FCM_TOKEN);
+                            user.id= queryDocumentSnapshots.getId();
                             users.add(user);
                        }
                        if (users.size()>0){

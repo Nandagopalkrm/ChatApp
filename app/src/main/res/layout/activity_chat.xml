@@ -72,6 +72,7 @@
         android:id="@+id/viewSupporter"
         android:layout_width="match_parent"
         android:layout_height="1dp"
+        android:background="@color/primary"
         android:layout_marginTop="@dimen/_12sdp"
         app:layout_constraintTop_toBottomOf="@id/imageBack"/>
 
@@ -83,6 +84,7 @@
         android:orientation="vertical"
         android:overScrollMode="never"
         android:padding="@dimen/_25sdp"
+        app:stackFromEnd="true"
         android:visibility="gone"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="@id/viewBackground"
@@ -123,22 +125,19 @@
         android:layout_width="0dp"
         android:layout_height="@dimen/_40sdp"
         android:layout_marginStart="@dimen/_40sdp"
-        android:layout_marginLeft="@dimen/_16sdp"
-        android:layout_marginEnd="@dimen/_12sdp"
-        android:layout_marginRight="@dimen/_12sdp"
+        android:layout_marginEnd="16dp"
         android:layout_marginBottom="@dimen/_12sdp"
         android:background="@drawable/background_chat_input"
         android:hint="@string/type_a_message"
         android:imeOptions="actionDone"
         android:importantForAutofill="no"
         android:inputType="text"
-        android:padding="@dimen/_80sdp"
-        android:paddingEnd="@dimen/_30sdp"
+        android:paddingStart="@dimen/_30sdp"
         android:textColor="@color/white"
         android:textColorHint="@color/secondary_text"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@id/layoutSend"
-        app:layout_constraintStart_toStartOf="parent"/>
+       app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/layoutSend"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
